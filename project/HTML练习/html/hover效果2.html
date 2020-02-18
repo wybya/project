@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover效果2</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul,ol,li{list-style:none;}
+        a{
+            text-decoration:none;
+        }
+        .nav{
+            width:500px;
+            height:30px;
+            background:#ccc;
+            margin:50px auto;
+            border-bottom:1px solid black;
+        }
+        .nav li{
+            float:left;
+           margin-right:10px;
+            background:#ff0000;
+            /* 因为下边框占1px */
+            /* padding-top:4px; */
+        }
+        .nav li a{
+            display:block;
+            padding:0 15px;
+            height:25px;
+            background-color: pink;
+            border:1px solid black;
+            border-bottom:0;
+            line-height:25px;
+            /* 当父元素和子元素都没有浮动的时候
+            添加margin-top,才会加给父元素，有浮动的时候，则不会吧父元素带下来 */
+            margin-top: 4px;
+        }
+        .nav li a:hover{
+            background:yellow;
+            color:white;
+            border-color:blue;
+            height:29px;
+            /* 清除上面设置的margin-top */
+            margin-top:0;
+        }
+        /* .nav li:hover{
+            padding-top:0;
+        } */
+
+    </style>
+</head>
+<body>
+
+    <ul class="nav">
+        <li>
+            <a href="#">one one</a>
+        </li>
+        <li>
+            <a href="#">two two</a>
+        </li>
+        <li>
+            <a href="#">three three</a>
+        </li>
+        <li>
+            <a href="#">fourer</a>
+        </li>
+    </ul>
+    
+</body>
+</html>
+
+<!-- 
+    关键：如何让a下来 
+
+    步骤
+    1、先给ul添加宽、高
+    2、给li加浮动
+    3、给a设置宽高，当宽不同时，用padding把a给撑开，然后在设置高度
+
+ -->

@@ -1,0 +1,55 @@
+@charset 'utf-8';
+body,h1,h2,h3,h4,h5,h6,ul,dl,dt,p{margin:0;padding:0;}
+body,html{height:100%;}
+ul,ol,li{list-style:none}
+a,u{text-decoration:none;}
+b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:16px;}
+input{outline:none;}
+img{display:block;border:0;}
+.clear_fix:after{content:".";height:0;display:block;overflow:hidden;visibility:hidden;}
+
+.logo_con,.banner_con,.case_con,.news_con{width:1001px;margin:0 auto;}
+/* logo */
+#logo{height:62px;background:#282828;}
+.logo_con h1{width: 158px;height:50px;float:left;padding:12px 0 0 10px;}
+.nav{width: 745px;height: 62px;float:right;}
+.nav li{float:left;font-size:12px;}
+.nav li a{display:block;height:62px;line-height:62px;padding:0 15px;background:url(../images/logo_bg_03.jpg) no-repeat
+    right center;color:#fff;}
+.nav li a:hover{background:#a5451c;}
+    /* 清除最后一个背景，因为是给a加的背景，所以给最后一个a设置none */
+.nav .bg_none{background:none;}
+/* banner */
+#banner{overflow:hidden;}
+.banner_con{height:422px;position:relative;}
+.banner_con img{height:422px;width:1001px;position:absolute;left:50%;margin-left:-500px;}
+/* case */
+.case_con{min-height:349px;background:#cfcfcf}
+.case_show{width:250px;background:url(../images/show_bg_03.jpg) no-repeat right center;
+    text-align:center;float:left;margin-top:55px;}
+.case_show img{margin:0 auto;}
+.case_show h2{font-size:20px;line-height:20px;color:#000;font-weight:900;margin-top:16px;}
+.case_show h3{font-size:12px;line-height:12px;margin:20px 0 16px;}
+.case_show p{font-size:12px;line-height:18px;}
+.case_show2{width:255px;}
+.case_show3{width:252px;}
+.case_show4{width:232px;background:none;}
+/* news */
+.news_con{min-height:268px;background:#f5f5f5;padding-top: 40px;}
+/* padding:1px是把盒子上下左右各撑大1px */
+.news_l{width: 297px;height: 224px;float:left;padding:1px;border:1px solid #ccc;float:left;}
+.news_l img{width: 297px;height: 224px;}
+.news_c{width: 320px;height: 240px;float:left;margin:0 18px 0 15px;}
+.news_c h2{font-size:20px;line-height:20px;color:#000;padding-top:6px;}
+.news_c h3{font-size:14px;line-height:14px;margin:17px 0 12px;}
+.news_c h3 a{color:#444;}
+.news_c p{font-size:12px;line-height:18px;text-indent:2em;padding-bottom:10px;border-bottom:1px dotted #ccc;}
+.news_c p a{color:#999;}
+.news_list{margin-top:12px;}
+.news_list li{width:300px;height:26px;line-height:26px;font-size:14px;background:url(../images/li_bg_03.jpg) 
+    no-repeat left center;padding-left:12px;}
+.news_list li a{color:#2a2525;}
+.news_r{width:320px;height:220px;background:yellow;float:left;border-left:1px solid red;padding-left:13px;}
+.news_r h2{font-size:20px;color:#000;line-height:20px;}
